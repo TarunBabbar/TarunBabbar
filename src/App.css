@@ -1,0 +1,71 @@
+/* Root container with soft gradient background */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #1f2937; /* Slate-800 */
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Logo styling with glow effect */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 300ms ease, filter 300ms ease;
+  will-change: transform, filter;
+}
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 1.5em #7f5af0aa); /* Purple glow */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em #00bcd4aa); /* Cyan glow */
+}
+
+/* Logo animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card component with gradient border and hover lift */
+.card {
+  padding: 2em;
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-image: linear-gradient(45deg, #7f5af0, #00bcd4) 1;
+}
+
+/* Docs link with color shift */
+.read-the-docs {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280; /* Gray-500 */
+  transition: color 200ms ease;
+}
+.read-the-docs:hover {
+  color: #374151; /* Gray-700 */
+}
