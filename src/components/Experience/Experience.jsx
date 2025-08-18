@@ -6,7 +6,7 @@ export default function Experience() {
       {[
         {
           company: "Coupa Software (2018–2025)",
-          description: "Coupa is a global leader in spend management solutions. I spearheaded test automation across UI, API, and system layers using C#.NET, Selenium, Playwright, and SpecFlow—architecting modular frameworks aligned with SOLID principles. I built CI/CD-integrated platforms with Azure Pipelines and GitHub, led performance testing with VSTS LoadTest, and mentored teams in BDD/TDD excellence across agile sprints."
+          description: "Coupa is a global leader in spend management solutions. I spearheaded test automation across UI, API, and system layers using C#.NET, Selenium, Playwright, and SpecFlow, architecting modular frameworks aligned with SOLID principles. I built CI/CD-integrated platforms with Azure Pipelines and GitHub, led performance testing with VSTS LoadTest, and mentored teams in BDD/TDD excellence across agile sprints."
         },
         {
           company: "Varian Medical Systems (2016–2017)",

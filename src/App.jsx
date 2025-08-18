@@ -6,9 +6,10 @@ import Footer from './components/Footer/Footer.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import Experience from './components/Experience/Experience.jsx';
 
+
 function App() {
   return (
-    <>
+    <div className="relative pb-20"> {/* Add padding-bottom to prevent content from being hidden behind footer */}
       <Header />
       <About />
       <Skills />
@@ -16,7 +17,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

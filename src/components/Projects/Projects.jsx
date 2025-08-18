@@ -4,7 +4,7 @@ export default function Projects() {
       <h2 className="text-2xl font-bold text-[#ff6f61] mb-6">My Projects</h2>
        <div>
         <h3 className="text-lg font-semibold"><a href="https://thinkgpt.in" className="text-blue-600 underline">ThinkGPT</a> - Your voice. GenAI’s brain. ThinkGPT brings them together seamlessly</h3>
-        <p>ThinkGPT is your voice-powered gateway to knowledge, creativity, and productivity. Whether you're learning a new concept, writing code, exploring ideas, or building something from scratch, ThinkGPT makes it effortless. Just speak your thoughts, and GenAI responds with clarity, insight, and precision—turning curiosity into creation.
+        <p>ThinkGPT is your voice-powered gateway to knowledge, creativity, and productivity. Whether you're learning a new concept, writing code, exploring ideas, or building something from scratch, ThinkGPT makes it effortless. Just speak your thoughts, and GenAI responds with clarity, insight, and precision-turning curiosity into creation.
 It’s not just a chatbot. It’s your thinking partner.
 From students to developers, creators to researchers - ThinkGPT empowers everyone to move faster, think deeper, and build smarter.
 </p>

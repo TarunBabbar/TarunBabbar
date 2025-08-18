@@ -9,7 +9,7 @@ export default function Skills() {
         <li><strong>Continuous Integration & Delivery:</strong> Azure Pipelines, GitHub Actions</li>
         <li><strong>Generative AI Solutions:</strong> Microsoft Copilot, AI-Powered Chatbot Integration</li>
         <li><strong>Programming Languages:</strong> C#.NET, Python, JavaScript, TypeScript</li>
-        <li><strong>IDE & Development Environments:</strong> Visual Studio (2018 / 2019 / 2022), Visual Studio Code</li>
+        <li><strong>IDE & Development Environments:</strong> Visual Studio (2017 / 2019 / 2022), Visual Studio Code</li>
       </ul>
     </section>
   );
