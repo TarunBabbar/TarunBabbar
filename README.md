@@ -12,7 +12,6 @@ orchestration frameworks and enterprise Playwright + TypeScript automation.
 [![Portfolio](https://img.shields.io/badge/Portfolio-tarunkumarbabbar.com-0A66C2?style=flat&logo=googlechrome&logoColor=white)](https://www.tarunkumarbabbar.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-tarunbabbar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/tarunbabbar)
 [![GitHub](https://img.shields.io/badge/GitHub-TarunBabbar-181717?style=flat&logo=github&logoColor=white)](https://github.com/TarunBabbar)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B91%2096232%2052365-25D366?style=flat&logo=whatsapp&logoColor=white)](https://wa.me/919623252365)
 
 📍 Pune, India
 
@@ -155,6 +154,6 @@ Next.js · FastAPI · Express
 **Open to Architect / Principal SDET / QA Head roles** — one scalable AI QA platform
 that multiple teams onboard to.
 
-[Portfolio](https://www.tarunkumarbabbar.com) · [LinkedIn](https://linkedin.com/in/tarunbabbar) · [WhatsApp](https://wa.me/919623252365) · [Email](mailto:babbar.tarun@gmail.com)
+[Portfolio](https://www.tarunkumarbabbar.com) · [LinkedIn](https://linkedin.com/in/tarunbabbar) · [Email](mailto:babbar.tarun@gmail.com)
 
 </div>
