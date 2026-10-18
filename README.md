@@ -154,6 +154,6 @@ Next.js · FastAPI · Express
 **Open to Architect / Principal SDET / QA Head roles** — one scalable AI QA platform
 that multiple teams onboard to.
 
-[Portfolio](https://www.tarunkumarbabbar.com) · [LinkedIn](https://linkedin.com/in/tarunbabbar) · [Email](mailto:babbar.tarun@gmail.com)
+[Portfolio](https://www.tarunkumarbabbar.com) · [LinkedIn](https://linkedin.com/in/tarunbabbar)
 
 </div>
