@@ -25,13 +25,52 @@ orchestration frameworks and enterprise Playwright + TypeScript automation.
 I take quality from a bottleneck to an accelerator.
 
 Today I'm a **Solutions Architect at Coforge Limited**, working at **Xplor Technologies**,
-where I'm building a **multi-agent orchestration framework** that generates requirements
-from Figma designs, converts them into test cases, and publishes them to TFS over REST
-APIs — with **every AI-generated output evaluated against quality metrics in DeepEval**,
-and **auto-detection of duplicate or near-identical scenarios** so they never multiply.
+building a **multi-agent QA platform** that runs as **two pipelines**: one that turns
+JIRA stories and Figma designs into reviewed, de-duplicated test cases — and one that
+turns selected test cases into working Playwright automation, generated straight into our
+existing framework.
+
+Every AI-generated output is evaluated against quality metrics in **DeepEval**, duplicate
+and near-identical scenarios are **detected automatically** so they never multiply, and
+generated automation is verified by **running it** — failures are healed against the real
+DOM before anything is pushed.
 
 The other half is classic architecture: **Playwright + TypeScript** frameworks, Azure
 DevOps and YAML CI/CD, and taking teams from **no automation to 100% automation adoption**.
+
+---
+
+## 🧠 The platform I'm building
+
+Two pipelines, one platform. DeepEval scores every AI output, duplicates are caught
+before they multiply, and generated code never lands on `main` — it goes to a **new branch
+for review**.
+
+### Pipeline 1 — Test Case Generation
+
+> **JIRA + Figma → reviewed, de-duplicated test cases in TFS**
+
+1. JIRA stories and Figma designs are ingested as the requirement source
+2. Requirements are generated and refined from the designs
+3. Each requirement is converted into test cases by a generation agent
+4. Duplicate and near-identical scenarios are auto-detected and merged
+5. Every output is evaluated against quality metrics with DeepEval (LLM-as-a-judge)
+6. Reviewed cases are published to **TFS over REST APIs** using token auth
+
+### Pipeline 2 — Automation Code Generation
+
+> **selected test cases → running Playwright specs, generated into the existing framework**
+
+**Inputs:** `Figma` · `test cases` · `existing TypeScript + Playwright framework` · `product code`
+
+1. Product-code and live-DOM information is read to capture the elements each test acts on
+2. A **`Skills.md`** automation recipe is generated for the selected test cases
+3. Automation code is generated — new **specs, page files, helpers** and whatever other
+   artifacts the tests need — following the existing framework structure
+4. The generated tests are executed
+5. Failures are fixed using **live DOM element capture over MCP Playwright** — real
+   elements, not guesses
+6. Tests are re-run until green, then the code is **pushed to a new branch for review**
 
 ---
 
@@ -42,7 +81,7 @@ Every one is built end-to-end — no mockups. Open the demo, read the source, or
 | App | What it does | Stack | |
 |---|---|---|---|
 | **QAE2E — AI QA Pipeline** | Agentic pipeline from requirement to release confidence, every step judged by an AI agent team | Next.js · OpenRouter · Agent Orchestration · Pinecone · MCP · Docker | [Live](https://qae2e.vercel.app) 🏆 |
-| **QABuddy — Hybrid RAG QA Assistant** | Ask a QA question, get one answer with sources cited — from Jira stories, test cases, bugs and the real Playwright UI/API code, searched by meaning *and* keyword | FastAPI · Pinecone · OpenRouter · RAG | [Live](https://qa-rag-five.vercel.app) · [Source](https://github.com/TarunBabbar/qa-rag) |
+| **QABuddy — Hybrid RAG QA Assistant** | Ask a QA question, get one answer with sources cited — from Jira stories, test cases, bugs and the real Playwright UI/API code, searched by meaning *and* keyword | FastAPI · Pinecone · OpenRouter · RAG | [Live](https://qa-rag-five.vercel.app) |
 | **QA Jobs Portal** | Daily India QA jobs, AI-extracted and curated — resume-matched scoring and saved roles | Next.js · NestJS · Angular · PostgreSQL · Prisma · OpenRouter | [Live v2](https://qajobsv2.vercel.app) |
 | **QA AI Dashboard** | One platform: LLM-scored resume⇄job matcher, QA interview RAG chat, PRD test-case generator, AI tutor, document Q&A | Next.js · PostgreSQL · Prisma · Pinecone · OpenRouter | [Live](https://qadashboard-lime.vercel.app) |
 | **QA RAG Platform** | Upload documents, ask questions, get grounded citations — smart chunking and configurable embeddings | Next.js · OpenRouter · Pinecone | [Live](https://qaragplatform.vercel.app) |
@@ -76,7 +115,7 @@ Prompt engineering · LangGraph · CrewAI · MCP protocol · Self-healing tests 
 **Test automation** — Playwright · TypeScript · Selenium · Cypress · Appium · Pytest ·
 REST Assured · Postman · BDD (SpecFlow/Cucumber) · NUnit / TestNG / JUnit · k6 · JMeter
 
-**Platforms & CI/CD** — Azure DevOps · TFS · YAML pipelines · GitHub Actions · Jenkins ·
+**Platforms & CI/CD** — Azure DevOps · TFS · JIRA · YAML pipelines · GitHub Actions · Jenkins ·
 Docker · Kubernetes · Git
 
 **Languages** — TypeScript · C# .NET · Python · JavaScript · Java · SQL
