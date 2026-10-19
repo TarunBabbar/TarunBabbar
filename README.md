@@ -51,7 +51,7 @@ Every one is built end-to-end — no mockups. Open the demo, read the source, or
 | **QA AI Dashboard** | One platform: LLM-scored resume⇄job matcher, QA interview RAG chat, PRD test-case generator, AI tutor, document Q&A | Next.js · PostgreSQL · Prisma · Pinecone · OpenRouter | [Live](https://qadashboard-lime.vercel.app) |
 | **QA RAG Platform** | Upload documents, ask questions, get grounded citations — smart chunking and configurable embeddings | Next.js · OpenRouter · Pinecone | [Live](https://qaragplatform.vercel.app) |
 | **QA Interview Prep Kit** | RAG-powered interview prep over your own PDF/DOCX knowledge base with streaming answers | Next.js · OpenRouter · Pinecone | [Live](https://qa-interview-preparation.vercel.app) |
-| **Jira QA Crew** | A crew of AI agents connected to Jira — analysis, test generation and execution workflows | Next.js · CrewAI patterns · TypeScript | [Live](https://jira-qa-crew-next.vercel.app) · [Source](https://github.com/TarunBabbar/jira-qa-crew-next) |
+| **Jira QA Crew** | A crew of AI agents connected to Jira — analysis, test generation and execution workflows | Next.js · CrewAI patterns · TypeScript | [Live](https://jira-qa-crew-next.vercel.app) |
 | **Resume → Job RAG** | Upload resume → profile extraction → multi-source job search → eligibility filter → LLM ranking | React · Express · ChromaDB · OpenRouter | [Source](https://github.com/TarunBabbar/resume-job-rag) |
 | **Chroma RAG Visualizer** | 3-panel UI that makes RAG visible: ingest, embed, vector search, answer — with live SSE progress | React · Express · ChromaDB | [Source](https://github.com/TarunBabbar/chroma-react-rag-pipeline) |
 
