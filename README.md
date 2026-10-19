@@ -39,40 +39,6 @@ DevOps and YAML CI/CD, and taking teams from **no automation to 100% automation 
 
 ---
 
-## 🧠 The platform I'm building
-
-Two pipelines, one platform. DeepEval scores every AI output, duplicates are caught
-before they multiply, and generated code never lands on `main` — it goes to a **new branch
-for review**.
-
-### Pipeline 1 — Test Case Generation
-
-> **JIRA + Figma → reviewed, de-duplicated test cases in TFS**
-
-1. JIRA stories and Figma designs are ingested as the requirement source
-2. Requirements are generated and refined from the designs
-3. Each requirement is converted into test cases by a generation agent
-4. Duplicate and near-identical scenarios are auto-detected and merged
-5. Every output is evaluated against quality metrics with DeepEval (LLM-as-a-judge)
-6. Reviewed cases are published to **TFS over REST APIs** using token auth
-
-### Pipeline 2 — Automation Code Generation
-
-> **selected test cases → running Playwright specs, generated into the existing framework**
-
-**Inputs:** `Figma` · `test cases` · `existing TypeScript + Playwright framework` · `product code`
-
-1. Product-code and live-DOM information is read to capture the elements each test acts on
-2. A **`Skills.md`** automation recipe is generated for the selected test cases
-3. Automation code is generated — new **specs, page files, helpers** and whatever other
-   artifacts the tests need — following the existing framework structure
-4. The generated tests are executed
-5. Failures are fixed using **live DOM element capture over MCP Playwright** — real
-   elements, not guesses
-6. Tests are re-run until green, then the code is **pushed to a new branch for review**
-
----
-
 ## 🤖 AI Apps you can run today
 
 Every one is built end-to-end — no mockups. Open the demo, read the source, or both.
